@@ -24,9 +24,9 @@ public class CameraFollow : MonoBehaviour
 		}
 		
 		Vector3 newPos = target.TransformDirection(offset);
-		transform.position = Vector3.SmoothDamp(transform.position, newPos, ref velocity, smoothness);
+		this.transform.position = Vector3.SmoothDamp(this.transform.position, newPos, ref velocity, smoothness);
 
-		Quaternion targetRot = Quaternion.LookRotation(-transform.position.normalized, target.up);
-		transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, Time.deltaTime * rotationSmoothness);
+		Quaternion targetRot = Quaternion.LookRotation(-this.transform.position.normalized, target.up);
+		this.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRot, Time.deltaTime * rotationSmoothness);
     }
 }

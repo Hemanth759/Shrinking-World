@@ -5,15 +5,17 @@ using UnityEngine;
 public class FauxGravityAttractor : MonoBehaviour
 {
     public static FauxGravityAttractor instance;
+
+    // public varaibles
+    public float gravity = -10f;
+
+    // private varaibles
     private SphereCollider col;
 
     private void Awake() {
         instance = this;
         col = instance.GetComponent<SphereCollider>();
     }
-
-    // public varaible
-    public float gravity = -10f;
 
     public void PlaceOnSurface(Rigidbody bodyRB) {
         bodyRB.MovePosition((bodyRB.position - this.transform.position).normalized * (transform.localScale.x * col.radius));

@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     // private varaibles
     private Rigidbody rb;
 
-    [SerializeField]
+    // private variables
     private float rotation;
     
     /// <summary>
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         // initailize the private varaibles
         rb = this.GetComponent<Rigidbody>();
     }
+
     /// <summary>
     /// Update is called once per frame
     /// </summary>
