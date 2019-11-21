@@ -15,6 +15,5 @@ public class ShrinkPlanet : MonoBehaviour
     void FixedUpdate()
     {
         this.transform.localScale *= 1f - (shrinkSpeed * Time.fixedDeltaTime);
-        Debug.Log(this.transform.localScale);
     }
 }
