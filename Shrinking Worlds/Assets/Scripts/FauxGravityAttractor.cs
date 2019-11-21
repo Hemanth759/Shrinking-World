@@ -13,7 +13,7 @@ public class FauxGravityAttractor : MonoBehaviour
     }
 
     // public varaible
-    public float gravity = -2f;
+    public float gravity = -10f;
 
     public void PlaceOnSurface(Rigidbody bodyRB) {
         bodyRB.MovePosition((bodyRB.position - this.transform.position).normalized * (transform.localScale.x * col.radius));
@@ -23,10 +23,9 @@ public class FauxGravityAttractor : MonoBehaviour
     {
         Vector3 gravityUp = (body.position - this.transform.position).normalized;
 
-        body.GetComponent<Rigidbody>().AddForce(gravityUp * gravity);
+        body.AddForce(gravityUp * gravity);
 
         Quaternion targetRotation = Quaternion.FromToRotation(body.transform.up, gravityUp) * body.rotation;
-        // body.rotation = Quaternion.Slerp(body.rotation, targetRotation, 15 * Time.deltaTime);
         body.MoveRotation(targetRotation);
     }
 }
