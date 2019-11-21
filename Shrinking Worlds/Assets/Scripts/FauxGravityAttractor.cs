@@ -19,13 +19,14 @@ public class FauxGravityAttractor : MonoBehaviour
         bodyRB.MovePosition((bodyRB.position - this.transform.position).normalized * (transform.localScale.x * col.radius));
     }
 
-    public void Attract(Transform body) 
+    public void Attract(Rigidbody body) 
     {
         Vector3 gravityUp = (body.position - this.transform.position).normalized;
 
         body.GetComponent<Rigidbody>().AddForce(gravityUp * gravity);
 
-        Quaternion targetRotation = Quaternion.FromToRotation(body.up, gravityUp) * body.rotation;
-        body.rotation = Quaternion.Slerp(body.rotation, targetRotation, 15 * Time.deltaTime);
+        Quaternion targetRotation = Quaternion.FromToRotation(body.transform.up, gravityUp) * body.rotation;
+        // body.rotation = Quaternion.Slerp(body.rotation, targetRotation, 15 * Time.deltaTime);
+        body.MoveRotation(targetRotation);
     }
 }

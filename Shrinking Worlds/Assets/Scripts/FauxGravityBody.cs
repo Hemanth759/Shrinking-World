@@ -10,7 +10,6 @@ public class FauxGravityBody : MonoBehaviour
     public bool placeOnSurface;
 
     // private varaibles
-    private Transform myTransform;
     private Rigidbody rb;
 
     
@@ -27,9 +26,6 @@ public class FauxGravityBody : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeRotation;
         rb.useGravity = false;        
 
-        // asign transform of this object to varaible
-        myTransform = this.transform;
-
         // place the player on surface
         if(placeOnSurface) {
             fauxGravityAttractor.PlaceOnSurface(rb);
@@ -41,6 +37,6 @@ public class FauxGravityBody : MonoBehaviour
     /// </summary>
     void FixedUpdate()
     {
-        fauxGravityAttractor.Attract(myTransform);        
+        fauxGravityAttractor.Attract(rb);        
     }
 }
