@@ -25,11 +25,6 @@ public class FauxGravityBody : MonoBehaviour
         rb = this.GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.FreezeRotation;
         rb.useGravity = false;        
-
-        // place the player on surface
-        if(placeOnSurface) {
-            fauxGravityAttractor.PlaceOnSurface(rb);
-        }
     }
 
     /// <summary>
@@ -37,6 +32,11 @@ public class FauxGravityBody : MonoBehaviour
     /// </summary>
     void FixedUpdate()
     {
-        fauxGravityAttractor.Attract(rb);        
+        // place the player on surface
+        if(placeOnSurface) {
+            fauxGravityAttractor.PlaceOnSurface(rb);
+        } else {
+            fauxGravityAttractor.Attract(rb);        
+        }
     }
 }
