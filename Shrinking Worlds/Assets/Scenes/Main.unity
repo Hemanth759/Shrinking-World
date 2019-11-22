@@ -960,6 +960,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   rototionSpeed: 180
+--- !u!114 &1816800138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816800134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53a22dc1adb0b054a86c20db4646a9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect: {fileID: 1110889348056415586, guid: 85b28d37c0cfdb7419901739e392183c,
+    type: 3}
 --- !u!4 &1816800139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4c4adc3cace61a944b579f53e690daa4,
@@ -1058,6 +1072,11 @@ PrefabInstance:
     - target: {fileID: 8403253999066626659, guid: 8ccbe1cc2400a1d48976cadcc3c1a4ed,
         type: 3}
       propertyPath: m_Name
+      value: Meteror
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403253999066626659, guid: 8ccbe1cc2400a1d48976cadcc3c1a4ed,
+        type: 3}
+      propertyPath: m_TagString
       value: Meteror
       objectReference: {fileID: 0}
     - target: {fileID: 8403253999066626655, guid: 8ccbe1cc2400a1d48976cadcc3c1a4ed,

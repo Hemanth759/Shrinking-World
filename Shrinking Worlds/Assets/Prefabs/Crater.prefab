@@ -14629,7 +14629,7 @@ GameObject:
   - component: {fileID: 5935338488937254121}
   m_Layer: 0
   m_Name: Crater
-  m_TagString: Untagged
+  m_TagString: Meteror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
