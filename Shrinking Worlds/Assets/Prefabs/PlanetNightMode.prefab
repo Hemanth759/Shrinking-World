@@ -92,19 +92,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.0000005
   m_Center: {x: 0.000008344651, y: 0.0000019073483, z: 2.4868996e-13}
---- !u!114 &3941011425009281102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5306017297906787352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89eb61fe2d0055f48827354c547ec62d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gravity: -2
 --- !u!114 &3941011425009281098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,39 +105,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shrinkSpeed: 0.01
---- !u!218 &1695473761
-Terrain:
+--- !u!114 &3941011425009281102
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5306017297906787352}
   m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 0}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89eb61fe2d0055f48827354c547ec62d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravity: -2
 --- !u!1 &6738322858730129765
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +158,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_Name
-      value: Planet
+      value: PlanetNightMode
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_TagString

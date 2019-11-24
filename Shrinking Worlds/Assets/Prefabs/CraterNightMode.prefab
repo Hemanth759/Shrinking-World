@@ -582,6 +582,21 @@ PrefabInstance:
       propertyPath: LightsModule.range
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 804631222822642536, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 804248521565504208, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 804702752917560656, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe450b96194d7684b817cfd35317471f, type: 3}
 --- !u!4 &7683760640814734013 stripped
