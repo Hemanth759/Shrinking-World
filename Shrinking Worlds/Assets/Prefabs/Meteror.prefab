@@ -14390,7 +14390,7 @@ Transform:
   - {fileID: 6018290217931632280}
   m_Father: {fileID: 8403253999066626655}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &8403253998560125573
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -18121,7 +18121,7 @@ ParticleSystem:
       properties: 0
       emitProbability: 1
   LightsModule:
-    enabled: 1
+    enabled: 0
     ratio: 1
     light: {fileID: 6180426907577212102}
     randomDistribution: 1
@@ -19223,7 +19223,7 @@ GameObject:
   - component: {fileID: 8403253999066626658}
   - component: {fileID: 8403253999066626653}
   - component: {fileID: 8403253999066626654}
-  - component: {fileID: -7545340774552967333}
+  - component: {fileID: 5017656927045475033}
   m_Layer: 0
   m_Name: Meteror
   m_TagString: Meteror
@@ -19296,7 +19296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeOnSurface: 0
---- !u!114 &-7545340774552967333
+--- !u!114 &5017656927045475033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19308,8 +19308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f544f81471f5140865f3e426d80bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crater: {fileID: 5935338488936829129, guid: 86ff8f48315a4e146a15d7061423ec67, type: 3}
+  crater: {fileID: 5699042704375476383, guid: 462e1353794f7744dbe5e1e8f945825b, type: 3}
   sphereCol: {fileID: 8403253999066626658}
   trail: {fileID: 8403253998560125573}
-  craterParent: {fileID: 3085382891887327709, guid: 4d528e391a28ea3488b7dffcf4943ee3,
-    type: 3}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Crater : FauxGravityBody
 {
     public float shrinkSpeed = 0.05f;
+    public ParticleSystem expolsionEffects;
 
     bool isVanishing = false;
 
@@ -19,6 +20,7 @@ public class Crater : FauxGravityBody
 
         if(this.transform.localScale.x <= .5f) {
             isVanishing = true;
+            expolsionEffects.Stop(true, ParticleSystemStopBehavior.StopEmitting);
             Destroy(this.gameObject, 3f);
         }
     }

@@ -79,7 +79,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &1528398882
+--- !u!135 &-6121252407893720660
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,8 +90,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 5.0000005
+  m_Center: {x: 0.000008344651, y: 0.0000019073483, z: 2.4868996e-13}
 --- !u!114 &1528398883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,11 +158,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_Name
-      value: Planet
+      value: Planet Variant
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8186af4f146dfb94a942ee7cdf8c1a95, type: 2}
+    - target: {fileID: 2300000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -178,19 +186,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.11365051
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.51063824
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.06831512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8495088
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_RootOrder
@@ -198,11 +206,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 15.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 62.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -218,14 +226,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8186af4f146dfb94a942ee7cdf8c1a95, type: 2}
-    - target: {fileID: 2300000, guid: babf778b2c3649c43ac72baadf8dc60a, type: 3}
-      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -1,14 +1,12 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Meteror : MonoBehaviour
 {
     // public variables
-    public GameObject crater;
 	public SphereCollider sphereCol;
 	public ParticleSystem trail;
-    public Transform craterParent;
 
     /// <summary>
     /// OnCollisionEnter is called when this collider/rigidbody has begun
@@ -19,8 +17,7 @@ public class Meteror : MonoBehaviour
     {
         Quaternion rot = Quaternion.LookRotation(this.transform.position.normalized);
         rot *= Quaternion.Euler(90f, 0f, 0f);
-        GameObject craterChild = Instantiate(crater, other.contacts[0].point, rot);
-        craterChild.transform.parent = craterParent;
+        GameObject craterChild = Instantiate(GameManager.instance.createrPrefab, other.contacts[0].point, rot);
 
         sphereCol.enabled = false;
 		trail.Stop(true, ParticleSystemStopBehavior.StopEmitting);
