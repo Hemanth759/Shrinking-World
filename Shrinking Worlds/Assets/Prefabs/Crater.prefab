@@ -14698,7 +14698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeOnSurface: 1
-  shrinkSpeed: 0.05
+  shrinkSpeed: 0.07
+  expolsionEffects: {fileID: 0}
 --- !u!1 &5935338488936829131
 GameObject:
   m_ObjectHideFlags: 0

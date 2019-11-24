@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeOnSurface: 1
-  shrinkSpeed: 0.05
+  shrinkSpeed: 0.07
   expolsionEffects: {fileID: 7499143700534780443}
 --- !u!1 &7225406557969764718
 GameObject:
@@ -581,6 +581,16 @@ PrefabInstance:
         type: 3}
       propertyPath: LightsModule.range
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816293445105558216, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 816293445105558216, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 804631222822642536, guid: fe450b96194d7684b817cfd35317471f,
         type: 3}
