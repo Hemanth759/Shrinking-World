@@ -789,11 +789,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1598429890}
     m_Modifications:
-    - target: {fileID: 5306017297906787352, guid: f413a5090ff96554f9be4c0c91dac2d5,
-        type: 3}
-      propertyPath: m_Name
-      value: PlanetNightMode
-      objectReference: {fileID: 0}
     - target: {fileID: 5306017297906300984, guid: f413a5090ff96554f9be4c0c91dac2d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -848,6 +843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306017297906787352, guid: f413a5090ff96554f9be4c0c91dac2d5,
+        type: 3}
+      propertyPath: m_Name
+      value: PlanetNightMode
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f413a5090ff96554f9be4c0c91dac2d5, type: 3}
