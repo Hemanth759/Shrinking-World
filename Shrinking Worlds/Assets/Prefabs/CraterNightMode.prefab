@@ -361,7 +361,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.9056604, g: 0.7002329, b: 0.36311856, a: 1}
+  m_Color: {r: 0.9056604, g: 0.61751825, b: 0.14097545, a: 1}
   m_Intensity: 1.8
   m_Range: 15
   m_SpotAngle: 94
@@ -497,10 +497,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5699042704375377087}
     m_Modifications:
-    - target: {fileID: 715652778981547980, guid: fe450b96194d7684b817cfd35317471f,
+    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
         type: 3}
-      propertyPath: m_Name
-      value: CraterGlow
+      propertyPath: LightsModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: LightsModule.light
+      value: 
+      objectReference: {fileID: 6202791145526009251}
+    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: LightsModule.ratio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: LightsModule.color
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
+        type: 3}
+      propertyPath: LightsModule.range
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 712729545255876224, guid: fe450b96194d7684b817cfd35317471f,
         type: 3}
@@ -557,30 +577,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
+    - target: {fileID: 715652778981547980, guid: fe450b96194d7684b817cfd35317471f,
         type: 3}
-      propertyPath: LightsModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
-        type: 3}
-      propertyPath: LightsModule.light
-      value: 
-      objectReference: {fileID: 6202791145526009251}
-    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
-        type: 3}
-      propertyPath: LightsModule.ratio
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
-        type: 3}
-      propertyPath: LightsModule.color
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 816386695606750758, guid: fe450b96194d7684b817cfd35317471f,
-        type: 3}
-      propertyPath: LightsModule.range
-      value: 0
+      propertyPath: m_Name
+      value: CraterGlow
       objectReference: {fileID: 0}
     - target: {fileID: 816293445105558216, guid: fe450b96194d7684b817cfd35317471f,
         type: 3}
@@ -597,12 +597,12 @@ PrefabInstance:
       propertyPath: scalingMode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 804248521565504208, guid: fe450b96194d7684b817cfd35317471f,
+    - target: {fileID: 804702752917560656, guid: fe450b96194d7684b817cfd35317471f,
         type: 3}
       propertyPath: scalingMode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 804702752917560656, guid: fe450b96194d7684b817cfd35317471f,
+    - target: {fileID: 804248521565504208, guid: fe450b96194d7684b817cfd35317471f,
         type: 3}
       propertyPath: scalingMode
       value: 0
