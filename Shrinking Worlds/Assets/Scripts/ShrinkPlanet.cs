@@ -6,7 +6,7 @@ public class ShrinkPlanet : MonoBehaviour
 {
     // public variables
 
-    [Range(.01f, .05f)]
+    [Range(.0f, .05f)]
     public float shrinkSpeed;
 
     /// <summary>

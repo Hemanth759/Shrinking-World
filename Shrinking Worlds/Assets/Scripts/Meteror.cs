@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Meteror : MonoBehaviour
@@ -17,6 +15,7 @@ public class Meteror : MonoBehaviour
     {
         Quaternion rot = Quaternion.LookRotation(this.transform.position.normalized);
         rot *= Quaternion.Euler(90f, 0f, 0f);
+        Debug.Log(other.contacts[0].point);
         GameObject craterChild = Instantiate(GameManager.instance.createrPrefab, other.contacts[0].point, rot);
 
         sphereCol.enabled = false;
