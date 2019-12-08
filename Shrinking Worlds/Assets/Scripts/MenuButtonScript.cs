@@ -6,6 +6,9 @@ public class MenuButtonScript : MonoBehaviour
     // public varaibles
     public AudioSource audioSource;
 
+    // private varaibles
+    private Animator animator;
+
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
@@ -13,11 +16,12 @@ public class MenuButtonScript : MonoBehaviour
     void Start()
     {
         audioSource = this.GetComponentInParent<AudioSource>();
+        animator = GameObject.Find("GameEnv").GetComponent<Animator>();
     }
 
     // button functions
     public void onClick() {
-        Debug.Log("pressed something");
+        Debug.Log(this.gameObject.name);
         audioSource.Play();
 
         switch (this.gameObject.name)
@@ -26,6 +30,7 @@ public class MenuButtonScript : MonoBehaviour
                 SceneManager.LoadScene(2);
                 break;
             case "Options Button":
+                animator.SetBool("ChangingState", true);
                 break;
             case "Credits Button":
                 break;
