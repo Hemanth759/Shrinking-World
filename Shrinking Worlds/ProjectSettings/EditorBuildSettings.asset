@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 3d3d1e7956c63c145b666bc4b2654631
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/NightMode.unity
+    guid: e1907c12abb6ff94790a361759a384ff
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 90f0735b8feb86a43b4b70ffa66cda4d,
       type: 2}
