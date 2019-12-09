@@ -7,11 +7,11 @@ public class PlayerCollision : MonoBehaviour
 {
     // public variables
     public GameObject deathEffect;
-
-    public GameObject EndScreen;
+    public Animator ScreenAnimator;
     
     // private variables
     private AudioSource audioSource;
+    private PlayerController playerController;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -19,7 +19,8 @@ public class PlayerCollision : MonoBehaviour
     /// </summary>
     void Start()
     {
-        audioSource = this.GetComponent<AudioSource> ();
+        audioSource = this.GetComponent<AudioSource>();
+        playerController = this.GetComponent<PlayerController>();
     }
 
     /// <summary>
@@ -37,13 +38,10 @@ public class PlayerCollision : MonoBehaviour
 
             PlayerController movement = this.GetComponent<PlayerController>();
 
-            ShowEndScreen();
+            ScreenAnimator.SetTrigger("PlayerDead");
+            playerController.isDead = true;
 
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
-    }
-
-    void ShowEndScreen() {
-        EndScreen.SetActive(true);
     }
 }

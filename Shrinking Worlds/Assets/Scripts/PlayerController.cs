@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,12 +11,16 @@ public class PlayerController : MonoBehaviour
 
     [Range(50, 250)]
     public float rototionSpeed;
+    public TMP_Text scoreText;
+
+    [HideInInspector]
+    public bool isDead;
+    
 
     // private varaibles
     private Rigidbody rb;
-
-    // private variables
     private float rotation;
+    private float score;
     
     /// <summary>
     /// Start is called before the first frame update
@@ -24,6 +29,8 @@ public class PlayerController : MonoBehaviour
     {
         // initailize the private varaibles
         rb = this.GetComponent<Rigidbody>();
+        isDead = false;
+        score = 0.0f;
     }
 
     /// <summary>
@@ -33,6 +40,10 @@ public class PlayerController : MonoBehaviour
     {
         // gets the rotation value from input axis
         rotation = Input.GetAxisRaw("Horizontal");
+        if(!isDead) {
+            score = score + Time.deltaTime;
+            scoreText.text = "Score:" + score.ToString("0.00");
+        }
     }
 
     /// <summary>
