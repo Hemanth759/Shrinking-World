@@ -26,10 +26,12 @@ public class MenuButtonScript : MonoBehaviour
         switch (this.gameObject.name)
         {
             case "Start Game Button":
-                SceneManager.LoadScene(2);
+                animator.SetTrigger("ChangingState");
+                Invoke("StartGame", 0.6f);
                 break;
             case "Options Button":
                 animator.SetTrigger("ChangingState");
+                Invoke("ShowOptions", 0.6f);
                 break;
             case "Credits Button":
                 break;
@@ -41,11 +43,19 @@ public class MenuButtonScript : MonoBehaviour
         }
     }
 
-    public void onHover() {
-        Debug.Log("enetering event");
+    void StartGame() {
+        SceneManager.LoadScene(2);
     }
 
-    public void onExitHover() {
-        Debug.Log("exiting hover");
+    void ShowMainMenu() {
+        animator.SetInteger("CurrentState", 0);
+    }
+
+    void ShowOptions() {
+        animator.SetInteger("CurrentState", 1);
+    }
+
+    void ShowCredits() {
+        animator.SetInteger("CurrentState", 2);
     }
 }

@@ -15,15 +15,22 @@ public class MenuEvents : MonoBehaviour
         creditsMenu.SetActive(false);
     }
 
+    void resetCurrentState() {
+        animator.SetInteger("CurrentState", -1);
+    }
+
     void activateMainMenu() {
         mainMenu.SetActive(true);
+        resetCurrentState();
     }
 
     void activateOptionMenu() {
         optionMenu.SetActive(true);
+        resetCurrentState();
     }
 
     void activateCreditMenu() {
         creditsMenu.SetActive(true);
+        resetCurrentState();
     }
 }
