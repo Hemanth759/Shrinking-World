@@ -21,7 +21,6 @@ public class MenuButtonScript : MonoBehaviour
 
     // button functions
     public void onClick() {
-        Debug.Log(this.gameObject.name);
         audioSource.Play();
 
         switch (this.gameObject.name)
