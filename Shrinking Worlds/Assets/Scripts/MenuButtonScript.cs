@@ -29,7 +29,7 @@ public class MenuButtonScript : MonoBehaviour
                 SceneManager.LoadScene(2);
                 break;
             case "Options Button":
-                animator.SetBool("ChangingState", true);
+                animator.SetTrigger("ChangingState");
                 break;
             case "Credits Button":
                 break;
