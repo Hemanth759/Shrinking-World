@@ -27,16 +27,22 @@ public class MenuButtonScript : MonoBehaviour
         {
             case "Start Game Button":
                 animator.SetTrigger("ChangingState");
-                Invoke("StartGame", 0.6f);
+                Invoke("StartGame", 1f);
                 break;
             case "Options Button":
                 animator.SetTrigger("ChangingState");
-                Invoke("ShowOptions", 0.6f);
+                Invoke("ShowOptions", 1f);
                 break;
             case "Credits Button":
+                animator.SetTrigger("ChangingState");
+                Invoke("ShowCredits", 1f);
                 break;
             case "Quit Button":
                 Application.Quit();
+                break;
+            case "Back":
+                animator.SetTrigger("ChangingState");
+                Invoke("ShowMainMenu", 1f);
                 break;
             default:
                 break;

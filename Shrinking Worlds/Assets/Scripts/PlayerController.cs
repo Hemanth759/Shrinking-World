@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
     {
         // gets the rotation value from input axis
         rotation = Input.GetAxisRaw("Horizontal");
+        if(scoreText == null)
+            return;
         if(!isDead) {
             score = score + Time.deltaTime;
             scoreText.text = "Score:" + score.ToString("0.00");
