@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     // public variables
     public static GameManager instance;
     public GameObject createrPrefab;
+
     public string SceneName {
         get {
             return this.PSceneName.name;

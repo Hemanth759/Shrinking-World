@@ -7,6 +7,8 @@ public class PlayerCollision : MonoBehaviour
 {
     // public variables
     public GameObject deathEffect;
+
+    public GameObject EndScreen;
     
     // private variables
     private AudioSource audioSource;
@@ -35,7 +37,13 @@ public class PlayerCollision : MonoBehaviour
 
             PlayerController movement = this.GetComponent<PlayerController>();
 
+            ShowEndScreen();
+
             Destroy(this.gameObject);
         }
+    }
+
+    void ShowEndScreen() {
+        EndScreen.SetActive(true);
     }
 }
