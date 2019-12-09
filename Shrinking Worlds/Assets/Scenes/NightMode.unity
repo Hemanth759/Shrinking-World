@@ -891,7 +891,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 33487871
+    rgba: 3841915903
   m_fontColor: {r: 1, g: 0.9858491, b: 0.9945315, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 245
+    rgba: 4278190325
   m_fontColor: {r: 0.9622642, g: 0, b: 0, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1791,7 +1791,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1805640455}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1918,7 +1918,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 33487871
+    rgba: 3841915903
   m_fontColor: {r: 1, g: 0.9858491, b: 0.9945315, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
