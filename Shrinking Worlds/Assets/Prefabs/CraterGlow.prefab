@@ -9520,7 +9520,7 @@ GameObject:
   - component: {fileID: 816386695606750758}
   - component: {fileID: 806035799183543374}
   m_Layer: 0
-  m_Name: Magic fire pro yellow
+  m_Name: CraterGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9533,8 +9533,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715652778981547980}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.04, y: 2.68, z: -4.37}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 712969037310271188}
@@ -9543,7 +9543,7 @@ Transform:
   - {fileID: 719293597352468910}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &816386695606750758
 ParticleSystem:
   m_ObjectHideFlags: 0
